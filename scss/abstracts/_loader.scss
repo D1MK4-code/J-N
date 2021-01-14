@@ -13,7 +13,7 @@
         width: 30px;
         height: 30px;
         position: relative;
-        border: 4px solid #Fff;
+        border: 4px solid #fff;
         animation: loader 2s infinite ease;
         &--inner {
             vertical-align: top;
@@ -22,5 +22,13 @@
             background-color: #fff;
             animation: loader-inner 2s infinite ease-in;
         }
+    }
+    &__text {
+        font-size: 2rem;
+        position: absolute;
+        left: 30px;
+        bottom: 30px;
+        color: #fff;
+        animation: moveInBottom .2s ease;
     }
 }
