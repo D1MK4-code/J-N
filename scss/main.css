@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .loader-wrapper__span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease; }
+    .loader-wrapper__span--inner {
+      vertical-align: top;
+      display: inline-block;
+      width: 100%;
+      background-color: #fff;
+      animation: loader-inner 2s infinite ease-in; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+@keyframes loader {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(180deg); }
+  50% {
+    transform: rotate(180deg); }
+  75% {
+    transform: rotate(360deg); }
+  100% {
+    transform: rotate(360deg); } }
+@keyframes loader-inner {
+  0% {
+    height: 0%; }
+  25% {
+    height: 0%; }
+  50% {
+    height: 100%; }
+  75% {
+    height: 100%; }
+  100% {
+    height: 0%; } }
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  color: #777; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 10rem !important; }
+
+.video-header {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0; }
+  .video-header__movie {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; }
+  .video-header .info {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; }
+    .video-header .info__title {
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); }
+      .video-header .info__title--span-main {
+        font-size: 3rem;
+        animation: moveInBottom 0.5s ease; }
+      .video-header .info__title--span-sub {
+        font-size: 4rem;
+        animation: moveInTop 0.5s ease; }
+
+@media (max-width: 1200px) {
+  .video-header .info__title--span-main {
+    font-size: 2.7rem;
+    animation: moveInBottom 0.5s ease; }
+  .video-header .info__title--span-sub {
+    font-size: 3.7rem;
+    animation: moveInTop 0.5s ease; } }
+@media (max-width: 991px) {
+  .video-header .info__title--span-main {
+    font-size: 2.3rem;
+    animation: moveInBottom 0.5s ease; }
+  .video-header .info__title--span-sub {
+    font-size: 3rem;
+    animation: moveInTop 0.5s ease; } }
+@media (max-width: 768px) {
+  .video-header .info__title--span-main {
+    font-size: 2rem;
+    animation: moveInBottom 0.5s ease; }
+  .video-header .info__title--span-sub {
+    font-size: 2.6rem;
+    animation: moveInTop 0.5s ease; } }
+@media (max-width: 567px) {
+  .video-header .info__title--span-main {
+    font-size: 1.7rem;
+    animation: moveInBottom 0.5s ease; }
+  .video-header .info__title--span-sub {
+    font-size: 2.3rem;
+    animation: moveInTop 0.5s ease; } }
+
+/*# sourceMappingURL=main.css.map */
