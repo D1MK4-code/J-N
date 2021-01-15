@@ -128,6 +128,37 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem; }
+  .card-container .card {
+    width: 250px;
+    height: 350px;
+    margin: 0 30px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .card-container .card__shape {
+      width: 15rem;
+      height: 15rem;
+      clip-path: circle(50% at 50% 50%); }
+    .card-container .card__image {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+    .card-container .card__text {
+      font-size: 1.6rem; }
+    .card-container .card__heading {
+      font-size: 2rem; }
+    .card-container .card--desc {
+      width: 250px;
+      height: 350px;
+      margin: 0 30px; }
+
 .video-header {
   height: 100vh;
   width: 100%;
@@ -188,7 +219,9 @@ body {
   .video-header .info__title--span2 {
     font-size: 2.3rem; } }
 .section-about {
-  padding: 8rem 1.5rem; }
+  max-width: 1600px;
+  padding: 8rem 1.5rem;
+  margin: 0 auto; }
   .section-about .heading-primary {
     text-align: center; }
   .section-about .desc-primary {

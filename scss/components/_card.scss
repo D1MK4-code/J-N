@@ -1,1 +1,37 @@
-//
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    .card {
+        width: 250px;
+        height: 350px;
+        margin: 0 30px;
+        background-color: $color-white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__shape {
+            width: 15rem;
+            height: 15rem;
+            clip-path: circle(50% at 50% 50%);
+        }
+        &__image {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        &__text {
+            font-size: 1.6rem;
+        }
+        &__heading {
+            font-size: 2rem;
+        }
+        &--desc {
+            width: 250px;
+            height: 350px;
+            margin: 0 30px;
+        }
+    }
+}
