@@ -99,8 +99,16 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   /* font-size: 16px; */
-  line-height: 1.7;
-  color: #777; }
+  line-height: 2.5rem;
+  color: #2f3542;
+  background-color: #dfe4ea; }
+
+.heading-primary {
+  font-size: 3rem;
+  margin-bottom: 3rem; }
+
+.desc-primary {
+  font-size: 1.6rem; }
 
 .u-center-text {
   text-align: center !important; }
@@ -179,5 +187,13 @@ body {
     font-size: 1.7rem; }
   .video-header .info__title--span2 {
     font-size: 2.3rem; } }
+.section-about {
+  padding: 8rem 1.5rem; }
+  .section-about .heading-primary {
+    text-align: center; }
+  .section-about .desc-primary {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto; }
 
 /*# sourceMappingURL=main.css.map */

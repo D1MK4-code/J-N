@@ -3,30 +3,20 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     /* font-size: 16px; */
-    line-height: 1.7;
-    color: #777;
+    line-height: 2.5rem;
+    color: $color-text-primary;
+    background-color: $color-background-primary;
 }
 
-// .heading-primary {
-//     color: #fff;
-//     text-transform: uppercase;
-//     backface-visibility: hidden;
-//     margin-bottom: 6rem;
-//     &--main {
-//         display: block;
-//         font-size: 6rem;
-//         font-weight: 400;
-//         letter-spacing: 3.5rem;
-//         animation: moveInLeft 1s ease-out;
-//     }
-//     &--sub {
-//         display: block;
-//         font-size: 2rem;
-//         font-weight: 700;
-//         letter-spacing: 1.75rem;
-//         animation: moveInRight 1s ease-out;
-//     }
-// }
+.heading-primary {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.desc-primary {
+    font-size: 1.6rem;
+}
+
 // .heading-secondary {
 //     font-size: 3.5rem;
 //     text-transform: uppercase;
