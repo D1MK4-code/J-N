@@ -8,12 +8,12 @@
         height: 35rem;
         margin: 0 3rem;
         background-color: $color-white;
+        @include card-shadow;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         text-align: center;
-        @include card-shadow;
         transition: transform 0.2s ease-in-out;
         &__shape {
             width: 15rem;
@@ -31,7 +31,7 @@
         }
         &--desc {
             width: 30rem;
-            height: 35rem;
+            height: auto;
             margin: 0 3rem;
             display: flex;
             flex-direction: column;
@@ -41,9 +41,10 @@
         &__heading {
             font-size: 1.6rem;
             margin-top: 2.5rem;
-            font-weight: 600;
+            font-weight: 700;
             line-height: 3rem;
             &--sub {
+                font-family: 'Montserrat', sans-serif;
                 font-size: 1.4rem;
                 font-weight: 400;
             }
@@ -69,7 +70,7 @@
             }
         }
         &:hover {
-            transform: scale(1.05);
+            transform: scale(1.05) translateY(-.5rem);
         }
     }
 }

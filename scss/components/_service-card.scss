@@ -1,0 +1,26 @@
+.service-card {
+    width: 20rem;
+    height: 20rem;
+    padding: 2rem;
+    background-color: $color-white;
+    @include card-shadow;
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+    &__image {
+        width: 7rem;
+        opacity: 0.9;
+    }
+    &__desc {
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    &:hover {
+        transform: scale(1.05) translateY(-.5rem);
+    }
+}
