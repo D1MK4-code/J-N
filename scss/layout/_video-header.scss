@@ -33,9 +33,9 @@
         text-align: center;
         color: $color-white;
         line-height: 4rem;
+        animation: moveInTop 1s ease;
         &__title {
             text-shadow: $heading-primary-shadow;
-            animation: moveInTop 0.5s ease;
             &--span1 {
                 font-size: 3rem;
             }
