@@ -336,7 +336,7 @@ h6 {
   .section-services .services {
     margin-top: 8rem; }
   .section-services .button {
-    margin-top: 8rem; }
+    margin-top: 4rem; }
   .section-services .owl-carousel .owl-item {
     display: flex;
     justify-content: center;
@@ -382,7 +382,9 @@ h6 {
   .section-services {
     padding: 4rem 1.5rem 8rem; }
     .section-services .heading-primary {
-      font-size: 2.7rem; } }
+      font-size: 2.7rem; }
+    .section-services .services {
+      margin-top: 6rem; } }
 @media (max-width: 768px) {
   .section-about .desc-primary {
     font-size: 1.4rem; }
@@ -408,6 +410,8 @@ h6 {
   .section-services {
     padding: 0rem 1.5rem 8rem; }
     .section-services .heading-primary {
-      font-size: 2.4rem; } }
+      font-size: 2.4rem; }
+    .section-services .services {
+      margin-top: 4rem; } }
 
 /*# sourceMappingURL=main.css.map */
