@@ -4,18 +4,21 @@
     align-items: center;
     margin-top: 8rem;
     .card {
-        width: 250px;
-        height: 350px;
-        margin: 0 30px;
+        width: 25rem;
+        height: 35rem;
+        margin: 0 3rem;
         background-color: $color-white;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
+        text-align: center;
+        @include card-shadow;
         &__shape {
             width: 15rem;
             height: 15rem;
             clip-path: circle(50% at 50% 50%);
+            margin-top: 4rem;
         }
         &__image {
             height: 100%;
@@ -25,13 +28,44 @@
         &__text {
             font-size: 1.6rem;
         }
-        &__heading {
-            font-size: 2rem;
-        }
         &--desc {
-            width: 250px;
-            height: 350px;
-            margin: 0 30px;
+            width: 30rem;
+            height: 35rem;
+            margin: 0 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        &__heading {
+            font-size: 1.6rem;
+            margin-top: 2.5rem;
+            font-weight: 600;
+            line-height: 3rem;
+            &--sub {
+                font-size: 1.4rem;
+                font-weight: 400;
+            }
+        }
+        &__icons {
+            display: flex;
+            margin-top: 1.5rem;
+            &--social {
+                height: 20px;
+                width: 20px;
+                margin: 0 1rem;
+                &:hover {
+                    filter: invert(50%) sepia(99%) saturate(3404%) hue-rotate(174deg) brightness(96%) contrast(101%);
+                }
+            }
+            &--linkedin {
+                width: 16px;
+                height: 20px;
+                margin: 0 1rem;
+                &:hover {
+                    filter: invert(50%) sepia(99%) saturate(3404%) hue-rotate(174deg) brightness(96%) contrast(101%);
+                }
+            }
         }
     }
 }
