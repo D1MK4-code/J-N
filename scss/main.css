@@ -24,7 +24,7 @@
       background-color: #fff;
       animation: loader-inner 2s infinite ease-in; }
   .loader-wrapper__text {
-    font-size: 2rem;
+    font-size: 1.4rem;
     position: absolute;
     left: 30px;
     bottom: 30px;
