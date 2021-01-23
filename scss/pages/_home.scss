@@ -5,9 +5,7 @@
     .section-wrapper {
         max-width: 1600px;
         margin: 0 auto;
-    }
-    .heading-primary {
-        text-align: center
+        text-align: center;
     }
     .desc-primary {
         text-align: center;
@@ -17,6 +15,9 @@
     }
     .cards {
         display: flex;
+    }
+    .btn-text {
+        margin-top: 1rem;
     }
 }
 

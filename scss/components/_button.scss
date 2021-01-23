@@ -17,3 +17,27 @@
         transform: translateY(-.1rem);
     }
 }
+
+.btn-text {
+    &:link,
+    &:visited {
+        color: $color-button-background;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $color-button-background;
+        padding: 3px 5px;
+        font-size: $button-font-size;
+        transition: all 0.3s;
+        font-weight: 500;
+    }
+    &:hover {
+        background-color: $color-button-background;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+    }
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        transform: translateY(0);
+    }
+}

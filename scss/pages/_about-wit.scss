@@ -1,0 +1,252 @@
+.about-wit {
+    width: 100%;
+    margin: 0 auto;
+    .header-about {
+        display: flex;
+        height: 100vh;
+        max-width: 1600px;
+        margin: 0 auto;
+        &__title-wrapper {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .heading-primary {
+            font-size: 6rem;
+        }
+        &__image {
+            width: 50%;
+            background-image: url(/img/wit-jedrzejewski.jpg);
+            background-position: 50% 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+    .career-bg {
+        background-color: $color-background-tertiary;
+    }
+    .career-wrapper {
+        max-width: 1600px;
+        display: flex;
+        margin: 0 auto;
+    }
+    .certificates {
+        width: 50%;
+        padding: 0 15px;
+        margin: 12rem 0;
+        .heading-secondary {
+            position: relative;
+            display: inline;
+            &:after {
+                content: '';
+                background-image: url(../../img/certificate.svg);
+                background-size: cover;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                position: absolute;
+                width: 6.4rem;
+                height: 6.4rem;
+                top: -1rem;
+                right: -10rem;
+            }
+        }
+        &__description {
+            margin-top: 4rem;
+        }
+        &__list {
+            list-style-type: none;
+        }
+        &__list-item {
+            font-size: $default-font-size;
+        }
+    }
+    .experience {
+        width: 50%;
+        padding: 0 15px;
+        margin: 12rem 0;
+        .heading-secondary {
+            position: relative;
+            display: inline;
+            &:after {
+                content: '';
+                background-image: url(../../img/experience.svg);
+                background-size: cover;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                position: absolute;
+                width: 6.4rem;
+                height: 6.4rem;
+                top: -1rem;
+                right: -10rem;
+            }
+        }
+        &__description {
+            margin-top: 4rem;
+        }
+        &__list {
+            list-style-type: none;
+        }
+        &__list-item {
+            font-size: $default-font-size;
+        }
+    }
+    .interests-wrapper {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+    .interests {
+        max-width: 1000px;
+        padding: 0 15px;
+        margin-top: 12rem;
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
+        .interests__title-wrapper {
+            text-align: center;
+        }
+        .heading-secondary {
+            position: relative;
+            display: inline;
+            &:after {
+                content: '';
+                background-image: url(../../img/interests.svg);
+                background-size: cover;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                position: absolute;
+                width: 6.4rem;
+                height: 6.4rem;
+                top: -1.5rem;
+                right: -9rem;
+            }
+        }
+        &__description {
+            margin-top: 4rem;
+        }
+        &__text {
+            font-size: $default-font-size;
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .about-wit {
+        .heading-primary {
+            font-size: 5rem;
+        }
+        .certificates,
+        .experience,
+        .interests {
+            .heading-secondary {
+                font-size: 3rem;
+                &:after {
+                    right: -9rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .about-wit {
+        .heading-primary {
+            font-size: 4rem;
+        }
+        .career-wrapper {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 8rem 0;
+        }
+        .certificates,
+        .experience,
+        .interests {
+            width: 90%;
+            .heading-secondary {
+                font-size: 2.7rem;
+            }
+        }
+        .certificates {
+            margin: 0;
+        }
+        .experience {
+            margin: 8rem 0 0;
+        }
+        .interests {
+            margin: 8rem 0;
+        }
+        .certificates__title-wrapper,
+        .experience__title-wrapper {
+            text-align: center;
+        }
+        .certificates__list-item,
+        .experience__list-item,
+        .interests__text {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .about-wit {
+        .career-wrapper {
+            padding: 6rem 0;
+        }
+        .experience {
+            margin: 6rem 0 0;
+        }
+        .interests {
+            margin: 6rem 0;
+        }
+        .certificates,
+        .experience,
+        .interests {
+            width: 90%;
+            .heading-secondary {
+                font-size: 2.4rem;
+            }
+        }
+        .certificates__list-item,
+        .experience__list-item,
+        .interests__text {
+            font-size: 1.3rem;
+        }
+    }
+}
+
+@media (max-width:568px) {
+    .about-wit {
+        .certificates,
+        .experience,
+        .interests {
+            width: 90%;
+            .heading-secondary {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+                &:after {
+                    width: 48px;
+                    height: 48px;
+                    right: -7rem;
+                }
+            }
+        }
+        .certificates__title-wrapper,
+        .experience__title-wrapper {
+            text-align: left;
+            max-width: 200px;
+        }
+        .interests {
+            .interests__title-wrapper {
+                text-align: left;
+                max-width: 200px;
+            }
+        }
+        .certificates__description,
+        .experience__description,
+        .interests__description {
+            margin-top: 2rem;
+        }
+    }
+}
