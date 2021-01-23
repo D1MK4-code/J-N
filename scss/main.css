@@ -242,30 +242,30 @@ h6 {
   .service-card:hover {
     transform: scale(1.05) translateY(-0.5rem); }
 
-.video-header {
+.header {
   height: 100vh;
   width: 100%;
   position: relative;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.15); }
-  .video-header__wrapper {
+  .header__image {
     width: 100%;
-    height: 100vh; }
-    .video-header__wrapper:after {
+    height: 100vh;
+    background-image: url(../../img/hero-bg.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .header__image:after {
       content: '';
       position: absolute;
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(0, 0, 0, 0.7);
       opacity: 1;
       width: 100%;
       height: 100%;
       top: 0;
       left: 0; }
-  .video-header__movie {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover; }
-  .video-header .info {
+  .header .info {
     position: absolute;
     width: 100%;
     top: 50%;
@@ -275,32 +275,32 @@ h6 {
     color: #fff;
     line-height: 4rem;
     animation: moveInTop 1s ease; }
-    .video-header .info__title {
+    .header .info__title {
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); }
-      .video-header .info__title--span1 {
+      .header .info__title--span1 {
         font-size: 3rem; }
-      .video-header .info__title--span2 {
+      .header .info__title--span2 {
         font-size: 4rem; }
 
 @media (max-width: 1200px) {
-  .video-header .info__title--span1 {
+  .header .info__title--span1 {
     font-size: 2.7rem; }
-  .video-header .info__title--span2 {
+  .header .info__title--span2 {
     font-size: 3.7rem; } }
 @media (max-width: 991px) {
-  .video-header .info__title--span1 {
+  .header .info__title--span1 {
     font-size: 2.3rem; }
-  .video-header .info__title--span2 {
+  .header .info__title--span2 {
     font-size: 3rem; } }
 @media (max-width: 768px) {
-  .video-header .info__title--span1 {
+  .header .info__title--span1 {
     font-size: 2rem; }
-  .video-header .info__title--span2 {
+  .header .info__title--span2 {
     font-size: 2.6rem; } }
 @media (max-width: 567px) {
-  .video-header .info__title--span1 {
+  .header .info__title--span1 {
     font-size: 1.9rem; }
-  .video-header .info__title--span2 {
+  .header .info__title--span2 {
     font-size: 2.3rem; } }
 .section-about {
   padding: 8rem 1.5rem;
