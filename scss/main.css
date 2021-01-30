@@ -607,8 +607,7 @@ nav {
       margin-top: 4rem; } }
 .about-wit {
   width: 100%;
-  margin: 0 auto;
-  position: relative; }
+  margin: 0 auto; }
   .about-wit .header-about {
     display: flex;
     height: 100vh;
@@ -625,7 +624,7 @@ nav {
       width: 50%;
       background-image: url(/img/wit_jedrzejewski.png);
       background-position: 50% 100%;
-      background-size: 75%;
+      background-size: cover;
       background-repeat: no-repeat; }
       .about-wit .header-about__image .heading-primary--mobile {
         display: none; }
@@ -772,7 +771,7 @@ nav {
     text-align: center; }
     .about-wit .header-about__image .heading-primary--mobile {
       display: inline-block;
-      margin-top: 4rem; }
+      margin-top: 8rem; }
   .about-wit .career-wrapper {
     padding: 6rem 0; }
   .about-wit .experience {
@@ -824,8 +823,6 @@ nav {
     margin-top: 2rem; } }
 @media (max-width: 450px) {
   .about-wit .header-about__image {
-    background-size: contain; }
-    .about-wit .header-about__image .heading-primary--mobile {
-      margin-top: 6rem; } }
+    background-size: contain; } }
 
 /*# sourceMappingURL=main.css.map */
