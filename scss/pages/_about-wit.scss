@@ -290,10 +290,9 @@
     .about-wit {
         .header-about {
             &__image {
-                background-size: 95%;
-                background-position: 100% 100%;
+                background-size: contain;
                 .heading-primary--mobile {
-                    margin-top: 8rem;
+                    margin-top: 10rem;
                 }
             }
         }

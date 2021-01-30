@@ -699,9 +699,8 @@ h6 {
     margin-top: 2rem; } }
 @media (max-width: 450px) {
   .about-wit .header-about__image {
-    background-size: 95%;
-    background-position: 100% 100%; }
+    background-size: contain; }
     .about-wit .header-about__image .heading-primary--mobile {
-      margin-top: 8rem; } }
+      margin-top: 10rem; } }
 
 /*# sourceMappingURL=main.css.map */
