@@ -331,7 +331,6 @@ h6 {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
-    z-index: 5;
     position: relative; }
     .header .mouse:after {
       content: '';
