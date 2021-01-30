@@ -12,140 +12,162 @@
 
 <body>
 
-    <header class="header">
-        <div class="header__image">
-        </div>
-        <div class="info">
-            <h1 class="info__title ">
-                <span class="info__title--span1">Jędrzejewski & Napora
-                    <br>
-                </span>
-                <span class="info__title--span2 ">Jesteśmy tu, żeby pomagać.</span>
-            </h1>
-        </div>
-        <button class="mouse-wrapper">
-            <div class="mouse"></div>
-        </button>
-    </header>
+    <div class="home-wrapper">
 
-    <div class="loader-wrapper">
-        <span class="loader-wrapper__span"><span class="loader-wrapper__span--inner"></span></span>
-        <p class="loader-wrapper__text">Jeszcze tylko moment</p>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Jędrzejewski&Napora</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="offers.html">Oferta</a></li>
+                <li><a href="price-list.html">Cennik</a></li>
+                <li><a href="gallery.html">Galeria</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+
+        <header class="header">
+            <div class="header__image">
+            </div>
+            <div class="info">
+                <h1 class="info__title ">
+                    <span class="info__title--span1">Jędrzejewski & Napora
+                        <br>
+                    </span>
+                    <span class="info__title--span2 ">Jesteśmy tu, żeby pomagać.</span>
+                </h1>
+            </div>
+            <button class="mouse-wrapper">
+                <div class="mouse"></div>
+            </button>
+
+
+
+        </header>
+
+        <div class="loader-wrapper">
+            <span class="loader-wrapper__span"><span class="loader-wrapper__span--inner"></span></span>
+            <p class="loader-wrapper__text">Jeszcze tylko moment</p>
+        </div>
+
+        <section class="section-about">
+            <div class="section-wrapper">
+
+                <h2 class="heading-secondary">O nas</h2>
+                <p class="desc-primary">Specjalizujemy się w fizjoterapii ortopedycznej i powieziowej (terapii
+                    dolegliwości bólowych kręgosłupa,
+                    stanów przeciążeniowych mięśni i stawów, stanach zapalnych, rehabilitacyjnym postępowaniu
+                    pooperacyjnym).
+                </p>
+                <div class="card-container">
+                    <div class="card--desc">
+                        <p class="card__text">Nasze umiejętności opieramy w wiedzy, którą zdobywamy i rozwijamy
+                            systematycznie
+                            uczestnicząc w
+                            licznych szkoleniach z zakresu terapii manualnej, terapii tkanek miękkich, funkcjonalnego
+                            treningu
+                            rehabilitacyjnego oraz masażu leczniczego i sportowego.</p>
+                        <a href="offers.html" class="button">Więcej</a>
+                    </div>
+                    <div class="cards">
+                        <div class="card">
+                            <figure class="card__shape">
+                                <img class="card__image" src="img/wit-jedrzejewski.jpg" alt="Wit Jędrzejewski">
+                            </figure>
+                            <h3 class="card__heading">Wit Jędrzejewski <br>
+                                <span class="card__heading--sub">Fizjoterapeuta</span>
+                            </h3>
+                            <div class="card__icons">
+                                <a href="#" class="card__icons--link"><img src="img/facebook.svg" alt="Facebook-icon"
+                                        class="card__icons--social"></a>
+                                <a href="#" class="card__icons--link"><img src="img/instagram.svg" alt="Instagram-icon"
+                                        class="card__icons--social"></a>
+                                <a href="#" class="card__icons--link"><img src="img/linkedin.svg" alt="Linkedin-icon"
+                                        class="card__icons--linkedin"></a>
+                            </div>
+                            <a href="about-wit.html" class="btn-text">O mnie &rarr;</a>
+                        </div>
+                        <div class="card">
+                            <figure class="card__shape">
+                                <img class="card__image" src="img/patryk-napora.jpg" alt="Patryk Napora">
+                            </figure>
+                            <h3 class="card__heading">Patryk Napora <br>
+                                <span class="card__heading--sub">Masażysta</span>
+                            </h3>
+                            <div class="card__icons">
+                                <a href="#" class="card__icons--link"><img src="img/facebook.svg" alt="Facebook-icon"
+                                        class="card__icons--social"></a>
+                                <a href="#" class="card__icons--link"><img src="img/instagram.svg" alt="Instagram-icon"
+                                        class="card__icons--social"></a>
+                                <a href="#" class="card__icons--link"><img src="img/linkedin.svg" alt="Linkedin-icon"
+                                        class="card__icons--linkedin"></a>
+                            </div>
+                            <a href="" class="btn-text">O mnie &rarr;</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section-services">
+            <div class="section-wrapper">
+                <h2 class="heading-secondary">Usługi</h2>
+                <p class="desc-primary">W postępowaniu terapeutycznym pracujemy nowoczesnymi technikami manualnymi.
+                    Zajmujemy się diagnostyką i leczeniem wad postawy.
+                    Gama świadeczonych przez nas usług jest bardzo rozbudowana.</p>
+                <div class="services owl-carousel owl-theme">
+                    <a class="service-link" href="#">
+                        <div class="service-card">
+                            <p class="service-card__desc">Metoda PNF</p>
+                            <img src="img/metoda-pnf.svg" alt="Metoda PNF" class="service-card__image">
+                        </div>
+                    </a>
+                    <a class="service-link" href="#">
+                        <div class="service-card">
+                            <p class="service-card__desc">Kinesiology taping</p>
+                            <img src="img/kinesiology taping.svg" alt="Kinesiology taping" class="service-card__image">
+                        </div>
+                    </a>
+                    <a class="service-link" href="#">
+                        <div class="service-card">
+                            <p class="service-card__desc">Chiropraktyka wg Ackermana</p>
+                            <img src="img/chiropraktyka.svg" alt="Chiropraktyka wg Ackermana"
+                                class="service-card__image">
+                        </div>
+                    </a>
+                    <a class="service-link" href="#">
+                        <div class="service-card">
+                            <p class="service-card__desc">Klasyczny masaż leczniczy</p>
+                            <img src="img/health-massage.svg" alt="Klasyczny masaż leczniczy"
+                                class="service-card__image">
+                        </div>
+                    </a>
+                    <a class="service-link" href="#">
+                        <div class="service-card">
+                            <p class="service-card__desc">Klasyczny masaż sportowy</p>
+                            <img src="img/sport-massage.svg" alt="Klasyczny masaż sportowy" class="service-card__image">
+                        </div>
+                    </a>
+                </div>
+                <a href="price-list.html" class="button">Zobacz cennik</a>
+            </div>
+        </section>
+
     </div>
-
-    <section class="section-about">
-        <div class="section-wrapper">
-
-            <h2 class="heading-secondary">O nas</h2>
-            <p class="desc-primary">Specjalizujemy się w fizjoterapii ortopedycznej i powieziowej (terapii
-                dolegliwości bólowych kręgosłupa,
-                stanów przeciążeniowych mięśni i stawów, stanach zapalnych, rehabilitacyjnym postępowaniu
-                pooperacyjnym).
-            </p>
-            <div class="card-container">
-                <div class="card--desc">
-                    <p class="card__text">Nasze umiejętności opieramy w wiedzy, którą zdobywamy i rozwijamy
-                        systematycznie
-                        uczestnicząc w
-                        licznych szkoleniach z zakresu terapii manualnej, terapii tkanek miękkich, funkcjonalnego
-                        treningu
-                        rehabilitacyjnego oraz masażu leczniczego i sportowego.</p>
-                    <a href="#" class="button">Więcej</a>
-                </div>
-                <div class="cards">
-                    <div class="card">
-                        <figure class="card__shape">
-                            <img class="card__image" src="img/wit-jedrzejewski.jpg" alt="Wit Jędrzejewski">
-                        </figure>
-                        <h3 class="card__heading">Wit Jędrzejewski <br>
-                            <span class="card__heading--sub">Fizjoterapeuta</span>
-                        </h3>
-                        <div class="card__icons">
-                            <a href="#" class="card__icons--link"><img src="img/facebook.svg" alt="Facebook-icon"
-                                    class="card__icons--social"></a>
-                            <a href="#" class="card__icons--link"><img src="img/instagram.svg" alt="Instagram-icon"
-                                    class="card__icons--social"></a>
-                            <a href="#" class="card__icons--link"><img src="img/linkedin.svg" alt="Linkedin-icon"
-                                    class="card__icons--linkedin"></a>
-                        </div>
-                        <a href="about-wit.html" class="btn-text">O mnie &rarr;</a>
-                    </div>
-                    <div class="card">
-                        <figure class="card__shape">
-                            <img class="card__image" src="img/patryk-napora.jpg" alt="Patryk Napora">
-                        </figure>
-                        <h3 class="card__heading">Patryk Napora <br>
-                            <span class="card__heading--sub">Fizjoterapeuta</span>
-                        </h3>
-                        <div class="card__icons">
-                            <a href="#" class="card__icons--link"><img src="img/facebook.svg" alt="Facebook-icon"
-                                    class="card__icons--social"></a>
-                            <a href="#" class="card__icons--link"><img src="img/instagram.svg" alt="Instagram-icon"
-                                    class="card__icons--social"></a>
-                            <a href="#" class="card__icons--link"><img src="img/linkedin.svg" alt="Linkedin-icon"
-                                    class="card__icons--linkedin"></a>
-                        </div>
-                        <a href="" class="btn-text">O mnie &rarr;</a>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="section-services">
-        <div class="section-wrapper">
-            <h2 class="heading-secondary">Usługi</h2>
-            <p class="desc-primary">W postępowaniu terapeutycznym pracujemy nowoczesnymi technikami manualnymi.
-                Zajmujemy się diagnostyką i leczeniem wad postawy.
-                Gama świadeczonych przez nas usług jest bardzo rozbudowana.</p>
-            <div class="services owl-carousel owl-theme">
-                <a class="service-link" href="#">
-                    <div class="service-card">
-                        <p class="service-card__desc">Metoda PNF</p>
-                        <img src="img/metoda-pnf.svg" alt="Metoda PNF" class="service-card__image">
-                    </div>
-                </a>
-                <a class="service-link" href="#">
-                    <div class="service-card">
-                        <p class="service-card__desc">Kinesiology taping</p>
-                        <img src="img/kinesiology taping.svg" alt="Kinesiology taping" class="service-card__image">
-                    </div>
-                </a>
-                <a class="service-link" href="#">
-                    <div class="service-card">
-                        <p class="service-card__desc">Chiropraktyka wg Ackermana</p>
-                        <img src="img/chiropraktyka.svg" alt="Chiropraktyka wg Ackermana" class="service-card__image">
-                    </div>
-                </a>
-                <a class="service-link" href="#">
-                    <div class="service-card">
-                        <p class="service-card__desc">Klasyczny masaż leczniczy</p>
-                        <img src="img/health-massage.svg" alt="Klasyczny masaż leczniczy" class="service-card__image">
-                    </div>
-                </a>
-                <a class="service-link" href="#">
-                    <div class="service-card">
-                        <p class="service-card__desc">Klasyczny masaż sportowy</p>
-                        <img src="img/sport-massage.svg" alt="Klasyczny masaż sportowy" class="service-card__image">
-                    </div>
-                </a>
-            </div>
-            <a href="#" class="button">Zobacz cennik</a>
-        </div>
-    </section>
-
-    <main>
-
-
-
-    </main>
 
     <script src="scripts/jquery-3.5.1.min.js"></script>
     <script src="scripts/loader.js"></script>
     <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
     <script src="scripts/owl-carousels.js"></script>
+    <script src="scripts/navigation.js"></script>
+
 
 </body>
 
