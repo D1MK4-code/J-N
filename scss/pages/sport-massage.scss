@@ -1,0 +1,159 @@
+.sport-massage {
+    &__container {
+        display: flex;
+        height: 94vh;
+        width: 100vw;
+        max-width: 1600px;
+        margin: 0 auto;
+        &:nth-child(2) {
+            margin: 6vh auto 0;
+        }
+    }
+    &__image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 3rem;
+    }
+    &__figure {
+        margin: 0;
+    }
+    &__image {
+        max-width: 600px;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 3rem;
+    }
+    &__paragraph {
+        font-size: $default-font-size;
+        margin-bottom: 1rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    &__list {
+        list-style-type: none;
+        margin-bottom: 1rem;
+    }
+    &__item {
+        font-size: $button-font-size;
+        margin-bottom: .3rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    .sport-massage {
+        &__image {
+            max-width: 500px;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .sport-massage {
+        &__container {
+            padding: 0 1rem;
+        }
+        &__image-container {
+            padding: 0 2rem;
+        }
+        &__image {
+            max-width: 425px;
+        }
+        &__info {
+            padding: 0 2rem;
+        }
+        &__paragraph {
+            font-size: 1.5rem;
+            margin-bottom: .8rem;
+        }
+        &__list {
+            margin-bottom: .8rem;
+        }
+        &__item {
+            margin-bottom: .2rem;
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    .sport-massage {
+        &__container {
+            height: auto;
+            flex-direction: column-reverse;
+            &:nth-child(2) {
+                margin: 10vh auto 0;
+            }
+        }
+        &__container--second {
+            flex-direction: column;
+        }
+        &__image-container {
+            padding: 4rem 3rem;
+        }
+        &__image {
+            max-width: 600px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .sport-massage {
+        &__image {
+            max-width: 500px;
+        }
+        &__paragraph {
+            font-size: 1.4rem;
+            margin-bottom: .8rem;
+        }
+        &__list {
+            margin-bottom: .7rem;
+        }
+        &__item {
+            font-size: 1.3rem;
+            margin-bottom: .1rem;
+        }
+        .heading-tertiary {
+            font-size: 2.3rem;
+        }
+    }
+}
+
+@media (max-width: 567px) {
+    .sport-massage {
+        &__container {
+            &:nth-child(2) {
+                margin: 9vh auto 0;
+            }
+        }
+        &__image-container {
+            padding: 3rem 0;
+        }
+        &__figure {
+            max-width: 100%;
+            padding: 0 1rem;
+            margin: 0 auto;
+        }
+        &__image {
+            max-width: 100%;
+        }
+        &__info {
+            padding: 0 1rem;
+        }
+        &__paragraph {
+            margin-bottom: .6rem;
+        }
+        &__list {
+            margin-bottom: .5rem;
+        }
+        &__item {
+            margin-bottom: 0;
+        }
+        .heading-tertiary {
+            font-size: 2.1rem;
+        }
+    }
+}
