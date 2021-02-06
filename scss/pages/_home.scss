@@ -41,6 +41,10 @@
     .service-link {
         text-decoration: none;
         color: $color-text-primary;
+        outline: none;
+        &:focus {
+            outline: none;
+        }
     }
     .services {
         margin-top: 8rem;
