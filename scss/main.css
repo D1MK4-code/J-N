@@ -504,6 +504,7 @@ nav {
     font-size: 1.4rem; } }
 .sport-massage__container {
   display: flex;
+  justify-content: center;
   height: 94vh;
   width: 100vw;
   max-width: 1600px;
@@ -529,7 +530,8 @@ nav {
 .sport-massage__paragraph {
   font-size: 1.6rem;
   margin-bottom: 1rem;
-  font-weight: 500; }
+  font-weight: 500;
+  text-transform: uppercase; }
 .sport-massage__paragraph--second {
   font-size: 1.4rem;
   margin-bottom: 1rem;

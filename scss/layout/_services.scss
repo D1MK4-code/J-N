@@ -1,6 +1,7 @@
 .sport-massage {
     &__container {
         display: flex;
+        justify-content: center;
         height: 94vh;
         width: 100vw;
         max-width: 1600px;
@@ -32,7 +33,8 @@
     &__paragraph {
         font-size: $default-font-size;
         margin-bottom: 1rem;
-        font-weight: 500; // text-transform: uppercase;
+        font-weight: 500;
+        text-transform: uppercase;
     }
     &__paragraph--second {
         font-size: 1.4rem;
