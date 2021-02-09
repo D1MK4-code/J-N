@@ -174,11 +174,12 @@ h6 {
   font-size: 1.4rem;
   font-weight: 500;
   margin-top: 2rem;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3); }
   .button:hover {
     transform: translateY(-0.3rem);
-    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.3); }
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.3);
+    background-color: #6b6b6b; }
   .button:active {
     transform: translateY(-0.1rem); }
 
@@ -326,8 +327,7 @@ h6 {
     transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
-    line-height: 4rem;
-    animation: moveInTop 1s ease; }
+    line-height: 4rem; }
     .header .info__title {
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); }
       .header .info__title--span1 {
