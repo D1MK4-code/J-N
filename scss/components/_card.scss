@@ -57,8 +57,12 @@
                 height: 20px;
                 width: 20px;
                 margin: 0 1rem;
+                outline: none;
                 &:hover {
                     filter: invert(50%) sepia(99%) saturate(3404%) hue-rotate(174deg) brightness(96%) contrast(101%);
+                }
+                &:focus {
+                    outline: none;
                 }
             }
             &--linkedin {
