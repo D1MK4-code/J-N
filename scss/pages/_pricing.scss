@@ -1,0 +1,113 @@
+.pricing {
+    padding-top: 12vh;
+    .heading-primary {
+        text-align: center;
+        font-size: 4.5rem;
+        margin-bottom: 6rem;
+    }
+    .table {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Manuale', serif;
+        &__heading {
+            font-size: 2.8rem;
+            text-align: left;
+            padding: 2rem 8rem 2rem 2rem;
+            background-color: #c5c5c5;
+        }
+        &__heading--second {
+            background-color: rgb(225, 225, 225);
+        }
+        &__data {
+            font-size: 2.2rem;
+            padding: 2rem 8rem 2rem 2rem;
+            background-color: #c5c5c5;
+        }
+        &__data--second {
+            background-color: rgb(225, 225, 225);
+        }
+    }
+}
+
+@media(max-width:991px) {
+    .pricing {
+        .heading-primary {
+            font-size: 4rem;
+            margin-bottom: 4.5rem;
+        }
+        .table {
+            &__heading {
+                font-size: 2.6rem;
+            }
+            &__data {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media(max-width:767px) {
+    .pricing {
+        .heading-primary {
+            font-size: 3.5rem;
+            margin-bottom: 4rem;
+        }
+        .table {
+            &__heading {
+                font-size: 2.4rem;
+            }
+            &__data {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+@media(max-width:567px) {
+    .pricing {
+        padding-top: 10vh;
+        .heading-primary {
+            font-size: 3rem;
+        }
+        .table {
+            padding: 0 15px;
+            &__heading {
+                font-size: 2.2rem;
+                padding: 2rem 6rem 2rem 2rem;
+            }
+            &__data {
+                font-size: 1.6rem;
+                padding: 2rem 6rem 2rem 2rem;
+            }
+        }
+    }
+}
+
+@media(max-width:400px) {
+    .pricing {
+        .table {
+            &__heading {
+                padding: 1.5rem 3rem;
+            }
+            &__data {
+                padding: 1.5rem 3rem;
+            }
+        }
+    }
+}
+
+@media(max-width:350px) {
+    .pricing {
+        .table {
+            &__heading {
+                padding: 1rem 2rem;
+                font-size: 2rem;
+            }
+            &__data {
+                padding: 1rem 2rem;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
