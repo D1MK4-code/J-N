@@ -617,9 +617,9 @@ nav {
   margin: 0 auto; }
   .about-patryk .header-about {
     display: flex;
-    height: 100vh;
+    height: 94vh;
     max-width: 1600px;
-    margin: 0 auto;
+    margin: 6vh auto 0;
     position: relative; }
     .about-patryk .header-about__title-wrapper {
       width: 50%;
@@ -835,9 +835,9 @@ nav {
   margin: 0 auto; }
   .about-wit .header-about {
     display: flex;
-    height: 100vh;
+    height: 94vh;
     max-width: 1600px;
-    margin: 0 auto;
+    margin: 6vh auto 0;
     position: relative; }
     .about-wit .header-about__title-wrapper {
       width: 50%;
