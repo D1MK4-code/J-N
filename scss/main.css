@@ -1108,12 +1108,45 @@ nav {
 @media (max-width: 450px) {
   .about-wit .header-about__image {
     background-size: contain; } }
+.attribute {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 10rem 0; }
+  .attribute .heading-primary {
+    text-align: left; }
+  .attribute .links {
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column; }
+    .attribute .links__list {
+      list-style-type: none;
+      width: 100%; }
+    .attribute .links__list-item a {
+      text-decoration: none;
+      color: #000;
+      cursor: pointer;
+      font-size: 1.4rem;
+      margin: 5px 0;
+      line-height: 1.3em;
+      display: block; }
+      .attribute .links__list-item a:hover {
+        color: blue; }
+
+@media (max-width: 575px) {
+  .attribute .links {
+    padding: 0 2rem; }
+  .attribute .heading-primary {
+    font-size: 3rem; }
+  .attribute__list-item a {
+    font-size: 1.2rem; } }
 .gallery {
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding: 3rem; }
 
 .home-wrapper {
   position: relative; }
@@ -1235,9 +1268,60 @@ nav {
       font-size: 2.4rem; }
     .section-services .services {
       margin-top: 4rem; } }
-.services {
-  position: relative; }
+.offer {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .offer .heading-primary {
+    margin-bottom: 6rem; }
+  .offer .heading-tertiary {
+    margin-bottom: 3rem;
+    max-width: 900px;
+    text-align: center; }
+  .offer__container {
+    padding: 12rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .offer__single {
+    margin-bottom: 6rem; }
+  .offer__services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+  .offer__service-link {
+    text-decoration: none;
+    color: #2f3542;
+    outline: none; }
+    .offer__service-link:focus {
+      outline: none; }
 
+@media (max-width: 991px) {
+  .offer .heading-primary {
+    font-size: 3.5rem; }
+  .offer .heading-tertiary {
+    font-size: 2.3rem; } }
+@media (max-width: 767px) {
+  .offer .heading-primary {
+    font-size: 3rem;
+    margin-bottom: 5rem; }
+  .offer .heading-tertiary {
+    font-size: 2rem; }
+  .offer__single {
+    margin-bottom: 5rem; }
+  .offer__container {
+    padding: 10rem 3rem; } }
+@media (max-width: 575px) {
+  .offer .heading-primary {
+    margin-bottom: 4rem; }
+  .offer__single {
+    margin-bottom: 4rem; }
+  .offer__container {
+    padding: 10rem 2rem; } }
 .pricing {
   padding-top: 12vh;
   position: relative;
