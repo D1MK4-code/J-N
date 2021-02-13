@@ -307,7 +307,7 @@ h6 {
 
 @media (max-width: 767px) {
   .mouse-wrapper {
-    bottom: 60px; } }
+    bottom: 8rem; } }
 .service-card {
   width: 20rem;
   height: 20rem;
