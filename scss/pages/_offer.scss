@@ -32,7 +32,9 @@
         text-decoration: none;
         color: $color-text-primary;
         outline: none;
-        &:focus {
+        &:focus,
+        &:hover,
+        &:active {
             outline: none;
         }
     }

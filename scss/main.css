@@ -343,7 +343,7 @@ h6 {
   position: absolute;
   bottom: 0;
   height: 8vh;
-  padding: 3rem 4rem;
+  padding: 2.5rem 4rem;
   display: flex;
   justify-content: space-between; }
   .footer__container {
@@ -1141,12 +1141,15 @@ nav {
   .attribute__list-item a {
     font-size: 1.2rem; } }
 .gallery {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3rem; }
+  padding: 3rem;
+  position: relative; }
+  .gallery .heading-primary {
+    line-height: 1.2em; }
 
 .home-wrapper {
   position: relative; }
@@ -1297,7 +1300,7 @@ nav {
     text-decoration: none;
     color: #2f3542;
     outline: none; }
-    .offer__service-link:focus {
+    .offer__service-link:focus, .offer__service-link:hover, .offer__service-link:active {
       outline: none; }
 
 @media (max-width: 991px) {
