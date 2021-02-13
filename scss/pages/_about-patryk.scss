@@ -28,11 +28,11 @@
             width: 50%;
             background-image: url(/img/patryk_napora.png);
             background-position: 50% 100%;
-            background-size: 90%;
+            background-size: 95%;
             background-repeat: no-repeat;
         }
         .mouse {
-            border: 2px solid $color-black;
+            border: 3px solid $color-black;
             &:after {
                 content: '';
                 background: $color-black;

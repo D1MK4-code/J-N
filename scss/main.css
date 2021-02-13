@@ -639,10 +639,10 @@ nav {
       width: 50%;
       background-image: url(/img/patryk_napora.png);
       background-position: 50% 100%;
-      background-size: 90%;
+      background-size: 95%;
       background-repeat: no-repeat; }
     .about-patryk .header-about .mouse {
-      border: 2px solid #000; }
+      border: 3px solid #000; }
       .about-patryk .header-about .mouse:after {
         content: '';
         background: #000; }
@@ -860,7 +860,7 @@ nav {
       background-size: 75%;
       background-repeat: no-repeat; }
     .about-wit .header-about .mouse {
-      border: 2px solid #000; }
+      border: 3px solid #000; }
       .about-wit .header-about .mouse:after {
         content: '';
         background: #000; }
