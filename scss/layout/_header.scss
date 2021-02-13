@@ -93,6 +93,12 @@
                 }
             }
         }
+        .mouse {
+            &:after {
+                content: '';
+                left: 9px;
+            }
+        }
     }
 }
 
