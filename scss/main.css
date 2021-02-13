@@ -270,6 +270,44 @@ h6 {
     .card-container .card:hover {
       transform: scale(1.05) translateY(-0.5rem); }
 
+.mouse-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+  pointer-events: none;
+  background-color: transparent;
+  border: none; }
+
+.mouse {
+  width: 30px;
+  height: 58px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  transition: all .2s ease-in-out 0s;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  position: relative; }
+  .mouse:after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    left: 9px;
+    top: 11px;
+    border-radius: 50%;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: scroll;
+    animation-name: scroll;
+    position: absolute; }
+
+@media (max-width: 767px) {
+  .mouse-wrapper {
+    bottom: 60px; } }
 .service-card {
   width: 20rem;
   height: 20rem;
@@ -334,38 +372,6 @@ h6 {
         font-size: 3rem; }
       .header .info__title--span2 {
         font-size: 4rem; }
-  .header .mouse-wrapper {
-    position: absolute;
-    left: 50%;
-    bottom: 30px;
-    pointer-events: none;
-    background-color: transparent;
-    border: none; }
-  .header .mouse {
-    width: 30px;
-    height: 58px;
-    border: 2px solid #fff;
-    border-radius: 25px;
-    transition: all .2s ease-in-out 0s;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-    position: relative; }
-    .header .mouse:after {
-      content: '';
-      width: 8px;
-      height: 8px;
-      background: #fff;
-      left: 9px;
-      top: 11px;
-      border-radius: 50%;
-      -webkit-animation-duration: 2s;
-      animation-duration: 2s;
-      -webkit-animation-iteration-count: infinite;
-      animation-iteration-count: infinite;
-      -webkit-animation-name: scroll;
-      animation-name: scroll;
-      position: absolute; }
 
 @media (max-width: 1200px) {
   .header .info__title--span1 {
@@ -377,13 +383,11 @@ h6 {
     font-size: 2.3rem; }
   .header .info__title--span2 {
     font-size: 3rem; } }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .header .info__title--span1 {
     font-size: 2rem; }
   .header .info__title--span2 {
-    font-size: 2.6rem; }
-  .header .mouse-wrapper {
-    bottom: 60px; } }
+    font-size: 2.6rem; } }
 @media (max-width: 567px) {
   .header .info__title--span1 {
     font-size: 1.9rem; }
@@ -608,6 +612,224 @@ nav {
     padding: 0 1rem; }
   .sport-massage .heading-tertiary {
     font-size: 2.1rem; } }
+.about-patryk {
+  width: 100%;
+  margin: 0 auto; }
+  .about-patryk .header-about {
+    display: flex;
+    height: 100vh;
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative; }
+    .about-patryk .header-about__title-wrapper {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem; }
+    .about-patryk .header-about .heading-primary {
+      font-size: 6rem; }
+    .about-patryk .header-about__subtitle {
+      font-style: italic;
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 1rem; }
+    .about-patryk .header-about__image {
+      width: 50%;
+      background-image: url(/img/patryk_napora.png);
+      background-position: 50% 100%;
+      background-size: 90%;
+      background-repeat: no-repeat; }
+    .about-patryk .header-about .mouse {
+      border: 2px solid #000; }
+      .about-patryk .header-about .mouse:after {
+        content: '';
+        background: #000; }
+  .about-patryk .career-bg {
+    background-color: #f7f7f7; }
+  .about-patryk .career-wrapper {
+    max-width: 1600px;
+    display: flex;
+    margin: 0 auto; }
+  .about-patryk .certificates {
+    width: 50%;
+    padding: 0 3rem;
+    margin: 12rem 0; }
+    .about-patryk .certificates .heading-secondary {
+      position: relative;
+      display: inline; }
+      .about-patryk .certificates .heading-secondary:after {
+        content: '';
+        background-image: url(../../img/certificate.svg);
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 6.4rem;
+        height: 6.4rem;
+        top: -1rem;
+        right: -10rem; }
+    .about-patryk .certificates__description {
+      margin-top: 4rem; }
+    .about-patryk .certificates__list {
+      list-style-type: none; }
+    .about-patryk .certificates__list-item {
+      font-size: 1.6rem;
+      margin-bottom: 5px; }
+  .about-patryk .experience {
+    width: 50%;
+    padding: 0 3rem;
+    margin: 12rem 0; }
+    .about-patryk .experience .heading-secondary {
+      position: relative;
+      display: inline; }
+      .about-patryk .experience .heading-secondary:after {
+        content: '';
+        background-image: url(../../img/experience.svg);
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 6.4rem;
+        height: 6.4rem;
+        top: -1rem;
+        right: -10rem; }
+    .about-patryk .experience__description {
+      margin-top: 4rem; }
+    .about-patryk .experience__list {
+      list-style-type: none; }
+    .about-patryk .experience__list-item {
+      font-size: 1.6rem;
+      margin-bottom: 5px; }
+  .about-patryk .interests-wrapper {
+    max-width: 1600px;
+    margin: 0 auto; }
+  .about-patryk .interests {
+    max-width: 1000px;
+    padding: 0 3rem;
+    margin-top: 12rem;
+    margin-bottom: 6rem;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%); }
+    .about-patryk .interests .interests__title-wrapper {
+      text-align: center; }
+    .about-patryk .interests .heading-secondary {
+      position: relative;
+      display: inline; }
+      .about-patryk .interests .heading-secondary:after {
+        content: '';
+        background-image: url(../../img/interests.svg);
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 6.4rem;
+        height: 6.4rem;
+        top: -1.5rem;
+        right: -9rem; }
+    .about-patryk .interests__description {
+      margin-top: 4rem; }
+    .about-patryk .interests__text {
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem; }
+
+@media (max-width: 1200px) {
+  .about-patryk .header-about .heading-primary {
+    font-size: 5rem; }
+  .about-patryk .certificates .heading-secondary,
+  .about-patryk .experience .heading-secondary,
+  .about-patryk .interests .heading-secondary {
+    font-size: 3rem; }
+    .about-patryk .certificates .heading-secondary:after,
+    .about-patryk .experience .heading-secondary:after,
+    .about-patryk .interests .heading-secondary:after {
+      right: -9rem; } }
+@media (max-width: 991px) {
+  .about-patryk .header-about__title-wrapper {
+    width: 100%; }
+  .about-patryk .header-about__image {
+    display: none; }
+  .about-patryk .career-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 0; }
+  .about-patryk .certificates,
+  .about-patryk .experience,
+  .about-patryk .interests {
+    width: 90%; }
+    .about-patryk .certificates .heading-secondary,
+    .about-patryk .experience .heading-secondary,
+    .about-patryk .interests .heading-secondary {
+      font-size: 2.7rem; }
+  .about-patryk .certificates {
+    margin: 0; }
+  .about-patryk .experience {
+    margin: 8rem 0 0; }
+  .about-patryk .interests {
+    margin: 8rem 0; }
+  .about-patryk .certificates__title-wrapper,
+  .about-patryk .experience__title-wrapper {
+    text-align: center; }
+  .about-patryk .certificates__list-item,
+  .about-patryk .experience__list-item,
+  .about-patryk .interests__text {
+    font-size: 1.4rem; } }
+@media (max-width: 768px) {
+  .about-patryk .career-wrapper {
+    padding: 6rem 0; }
+  .about-patryk .experience {
+    margin: 6rem 0 0; }
+  .about-patryk .interests {
+    margin: 6rem 0; }
+  .about-patryk .certificates,
+  .about-patryk .experience,
+  .about-patryk .interests {
+    width: 90%; }
+    .about-patryk .certificates .heading-secondary,
+    .about-patryk .experience .heading-secondary,
+    .about-patryk .interests .heading-secondary {
+      font-size: 2.4rem; }
+  .about-patryk .certificates__list-item,
+  .about-patryk .experience__list-item,
+  .about-patryk .interests__text {
+    font-size: 1.3rem; } }
+@media (max-width: 576px) {
+  .about-patryk .header-about__image {
+    background-size: 90%;
+    background-position: 70% 100%; }
+  .about-patryk .certificates,
+  .about-patryk .experience,
+  .about-patryk .interests {
+    width: 90%; }
+    .about-patryk .certificates .heading-secondary,
+    .about-patryk .experience .heading-secondary,
+    .about-patryk .interests .heading-secondary {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      display: block; }
+      .about-patryk .certificates .heading-secondary:after,
+      .about-patryk .experience .heading-secondary:after,
+      .about-patryk .interests .heading-secondary:after {
+        width: 48px;
+        height: 48px;
+        right: -4rem; }
+  .about-patryk .certificates__title-wrapper,
+  .about-patryk .experience__title-wrapper {
+    text-align: left;
+    max-width: 200px; }
+  .about-patryk .interests .interests__title-wrapper {
+    text-align: left;
+    max-width: 200px; }
+  .about-patryk .certificates__description,
+  .about-patryk .experience__description,
+  .about-patryk .interests__description {
+    margin-top: 2rem; } }
+@media (max-width: 450px) {
+  .about-patryk .header-about__image {
+    background-size: contain; } }
 .about-wit {
   width: 100%;
   margin: 0 auto; }
@@ -615,22 +837,33 @@ nav {
     display: flex;
     height: 100vh;
     max-width: 1600px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    position: relative; }
     .about-wit .header-about__title-wrapper {
       width: 50%;
       display: flex;
+      flex-direction: column;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      padding: 3rem; }
     .about-wit .header-about .heading-primary {
       font-size: 6rem; }
+    .about-wit .header-about__subtitle {
+      font-style: italic;
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 1rem; }
     .about-wit .header-about__image {
       width: 50%;
       background-image: url(/img/wit_jedrzejewski.png);
       background-position: 50% 100%;
-      background-size: cover;
+      background-size: 75%;
       background-repeat: no-repeat; }
-      .about-wit .header-about__image .heading-primary--mobile {
-        display: none; }
+    .about-wit .header-about .mouse {
+      border: 2px solid #000; }
+      .about-wit .header-about .mouse:after {
+        content: '';
+        background: #000; }
   .about-wit .career-bg {
     background-color: #f7f7f7; }
   .about-wit .career-wrapper {
@@ -639,7 +872,7 @@ nav {
     margin: 0 auto; }
   .about-wit .certificates {
     width: 50%;
-    padding: 0 15px;
+    padding: 0 3rem;
     margin: 12rem 0; }
     .about-wit .certificates .heading-secondary {
       position: relative;
@@ -660,10 +893,11 @@ nav {
     .about-wit .certificates__list {
       list-style-type: none; }
     .about-wit .certificates__list-item {
-      font-size: 1.6rem; }
+      font-size: 1.6rem;
+      margin-bottom: 5px; }
   .about-wit .experience {
     width: 50%;
-    padding: 0 15px;
+    padding: 0 3rem;
     margin: 12rem 0; }
     .about-wit .experience .heading-secondary {
       position: relative;
@@ -684,13 +918,14 @@ nav {
     .about-wit .experience__list {
       list-style-type: none; }
     .about-wit .experience__list-item {
-      font-size: 1.6rem; }
+      font-size: 1.6rem;
+      margin-bottom: 5px; }
   .about-wit .interests-wrapper {
     max-width: 1600px;
     margin: 0 auto; }
   .about-wit .interests {
     max-width: 1000px;
-    padding: 0 15px;
+    padding: 0 3rem;
     margin-top: 12rem;
     margin-bottom: 6rem;
     left: 50%;
@@ -730,8 +965,10 @@ nav {
     .about-wit .interests .heading-secondary:after {
       right: -9rem; } }
 @media (max-width: 991px) {
-  .about-wit .header-about .heading-primary {
-    font-size: 4rem; }
+  .about-wit .header-about__title-wrapper {
+    width: 100%; }
+  .about-wit .header-about__image {
+    display: none; }
   .about-wit .career-wrapper {
     flex-direction: column;
     justify-content: center;
@@ -759,22 +996,6 @@ nav {
   .about-wit .interests__text {
     font-size: 1.4rem; } }
 @media (max-width: 768px) {
-  .about-wit .header-about .heading-primary {
-    font-size: 3rem; }
-  .about-wit .header-about__title-wrapper {
-    display: none; }
-  .about-wit .header-about__image {
-    width: 100%;
-    height: 100vh;
-    background-position: 57% 100%;
-    background-size: 70%;
-    position: absolute;
-    bottom: 0;
-    background-attachment: fixed;
-    text-align: center; }
-    .about-wit .header-about__image .heading-primary--mobile {
-      display: inline-block;
-      margin-top: 8rem; }
   .about-wit .career-wrapper {
     padding: 6rem 0; }
   .about-wit .experience {

@@ -1,4 +1,4 @@
-.about-wit {
+.about-patryk {
     width: 100%;
     margin: 0 auto;
     .header-about {
@@ -26,9 +26,9 @@
         }
         &__image {
             width: 50%;
-            background-image: url(/img/wit_jedrzejewski.png);
+            background-image: url(/img/patryk_napora.png);
             background-position: 50% 100%;
-            background-size: 75%;
+            background-size: 90%;
             background-repeat: no-repeat;
         }
         .mouse {
@@ -151,7 +151,7 @@
 }
 
 @media (max-width: 1200px) {
-    .about-wit {
+    .about-patryk {
         .header-about {
             .heading-primary {
                 font-size: 5rem;
@@ -171,7 +171,7 @@
 }
 
 @media (max-width: 991px) {
-    .about-wit {
+    .about-patryk {
         .header-about {
             &__title-wrapper {
                 width: 100%;
@@ -216,7 +216,7 @@
 }
 
 @media (max-width:768px) {
-    .about-wit {
+    .about-patryk {
         .header-about {}
         .career-wrapper {
             padding: 6rem 0;
@@ -244,7 +244,7 @@
 }
 
 @media (max-width:576px) {
-    .about-wit {
+    .about-patryk {
         .header-about {
             &__image {
                 background-size: 90%;
@@ -286,7 +286,7 @@
 }
 
 @media (max-width: 450px) {
-    .about-wit {
+    .about-patryk {
         .header-about {
             &__image {
                 background-size: contain;
