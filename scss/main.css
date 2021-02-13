@@ -969,6 +969,11 @@ nav {
       background-color: #c5c5c5; }
     .pricing .table__data--second {
       background-color: #e1e1e1; }
+  .pricing__info {
+    text-align: center;
+    margin: 3rem;
+    font-size: 1.4rem;
+    line-height: 1.4em; }
 
 @media (max-width: 991px) {
   .pricing .heading-primary {
@@ -985,7 +990,9 @@ nav {
   .pricing .table__heading {
     font-size: 2.4rem; }
   .pricing .table__data {
-    font-size: 1.8rem; } }
+    font-size: 1.8rem; }
+  .pricing__info {
+    font-size: 1.2rem; } }
 @media (max-width: 567px) {
   .pricing {
     padding-top: 10vh; }
