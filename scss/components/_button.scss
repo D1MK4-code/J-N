@@ -12,7 +12,7 @@
     &:hover {
         transform: translateY(-.3rem);
         box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.3);
-        background-color: $color-button-background-hover;
+        background-color: #333;
     }
     &:active {
         transform: translateY(-.1rem);

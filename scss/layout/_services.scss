@@ -1,4 +1,7 @@
 .sport-massage {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 6rem;
     &__container {
         display: flex;
         justify-content: center;
@@ -6,8 +9,9 @@
         width: 100vw;
         max-width: 1600px;
         margin: 0 auto;
+        padding-top: 6vh;
         &:nth-child(2) {
-            margin: 6vh auto 0;
+            margin: 0 auto;
         }
     }
     &__image-container {

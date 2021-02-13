@@ -103,10 +103,13 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  height: 100%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding-bottom: 8rem;
+  height: 100%; }
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -179,7 +182,7 @@ h6 {
   .button:hover {
     transform: translateY(-0.3rem);
     box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.3);
-    background-color: #6b6b6b; }
+    background-color: #333; }
   .button:active {
     transform: translateY(-0.1rem); }
 
@@ -333,6 +336,44 @@ h6 {
   .service-card:hover {
     transform: scale(1.05) translateY(-0.5rem); }
 
+.footer {
+  width: 100%;
+  height: 6vh;
+  background-color: #222222;
+  position: absolute;
+  bottom: 0;
+  height: 8vh;
+  padding: 3rem 4rem;
+  display: flex;
+  justify-content: space-between; }
+  .footer__container {
+    display: flex; }
+  .footer__paragraph {
+    color: #fff;
+    font-size: 1.4rem;
+    display: inline-block;
+    margin-right: .5rem; }
+  .footer__link {
+    color: #fff;
+    font-size: 1.4rem;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer; }
+
+@media (max-width: 767px) {
+  .footer {
+    padding: 1.5rem 3rem; }
+    .footer__container {
+      flex-direction: column; }
+    .footer__paragraph {
+      font-size: 1.2rem;
+      display: block; }
+    .footer__link {
+      font-size: 1.2rem;
+      display: block; } }
+@media (max-width: 400px) {
+  .footer {
+    padding: 1.5rem 2rem; } }
 .header {
   height: 100vh;
   width: 100%;
@@ -372,6 +413,9 @@ h6 {
         font-size: 3rem; }
       .header .info__title--span2 {
         font-size: 4rem; }
+  .header .mouse:after {
+    content: '';
+    left: 10px; }
 
 @media (max-width: 1200px) {
   .header .info__title--span1 {
@@ -477,15 +521,15 @@ nav {
     align-items: center;
     justify-content: flex-start;
     width: 50%;
-    background-color: #2f3542;
+    background-color: #222222;
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
     padding: 3rem 0 0; }
     .nav-links li {
       opacity: 0;
-      padding: 1rem 0; }
+      padding: 1.5rem 0; }
     .nav-links a {
-      font-size: 1.6rem; }
+      font-size: 1.7rem; }
 
   .burger {
     display: block;
@@ -506,46 +550,51 @@ nav {
 
   .nav-links a {
     font-size: 1.4rem; } }
-.sport-massage__container {
-  display: flex;
-  justify-content: center;
-  height: 94vh;
-  width: 100vw;
-  max-width: 1600px;
-  margin: 0 auto; }
-  .sport-massage__container:nth-child(2) {
-    margin: 6vh auto 0; }
-.sport-massage__image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 3rem; }
-.sport-massage__figure {
-  margin: 0; }
-.sport-massage__image {
-  max-width: 600px;
-  max-height: 700px; }
-.sport-massage__info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0 3rem; }
-.sport-massage__paragraph {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-  font-weight: 500;
-  text-transform: uppercase; }
-.sport-massage__paragraph--second {
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
-  font-weight: 400; }
-.sport-massage__list {
-  list-style-type: none;
-  margin-bottom: 1rem; }
-.sport-massage__item {
-  font-size: 1.4rem;
-  margin-bottom: .3rem; }
+.sport-massage {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 6rem; }
+  .sport-massage__container {
+    display: flex;
+    justify-content: center;
+    height: 94vh;
+    width: 100vw;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-top: 6vh; }
+    .sport-massage__container:nth-child(2) {
+      margin: 0 auto; }
+  .sport-massage__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem; }
+  .sport-massage__figure {
+    margin: 0; }
+  .sport-massage__image {
+    max-width: 600px;
+    max-height: 700px; }
+  .sport-massage__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 3rem; }
+  .sport-massage__paragraph {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    text-transform: uppercase; }
+  .sport-massage__paragraph--second {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-weight: 400; }
+  .sport-massage__list {
+    list-style-type: none;
+    margin-bottom: 1rem; }
+  .sport-massage__item {
+    font-size: 1.4rem;
+    margin-bottom: .3rem; }
 
 @media (max-width: 1300px) {
   .sport-massage__image {
@@ -735,6 +784,8 @@ nav {
     .about-patryk .interests__text {
       font-size: 1.6rem;
       margin-bottom: 1.5rem; }
+  .about-patryk .footer {
+    position: relative; }
 
 @media (max-width: 1200px) {
   .about-patryk .header-about .heading-primary {
@@ -833,7 +884,8 @@ nav {
     background-size: contain; } }
 .about-wit {
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
   .about-wit .header-about {
     display: flex;
     height: 94vh;
@@ -954,10 +1006,14 @@ nav {
     .about-wit .interests__text {
       font-size: 1.6rem;
       margin-bottom: 1.5rem; }
+  .about-wit .footer {
+    position: relative; }
 
 @media (max-width: 1200px) {
   .about-wit .header-about .heading-primary {
     font-size: 5rem; }
+  .about-wit .header-about__subtitle {
+    font-size: 1.8rem; }
   .about-wit .certificates .heading-secondary,
   .about-wit .experience .heading-secondary,
   .about-wit .interests .heading-secondary {
@@ -998,6 +1054,8 @@ nav {
   .about-wit .interests__text {
     font-size: 1.4rem; } }
 @media (max-width: 768px) {
+  .about-wit .header-about__subtitle {
+    font-size: 1.6rem; }
   .about-wit .career-wrapper {
     padding: 6rem 0; }
   .about-wit .experience {
@@ -1050,8 +1108,17 @@ nav {
 @media (max-width: 450px) {
   .about-wit .header-about__image {
     background-size: contain; } }
+.gallery {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .home-wrapper {
   position: relative; }
+  .home-wrapper .footer {
+    position: relative; }
 
 .section-about {
   padding: 8rem 1.5rem;
@@ -1168,8 +1235,13 @@ nav {
       font-size: 2.4rem; }
     .section-services .services {
       margin-top: 4rem; } }
+.services {
+  position: relative; }
+
 .pricing {
-  padding-top: 12vh; }
+  padding-top: 12vh;
+  position: relative;
+  min-height: 100vh; }
   .pricing .heading-primary {
     text-align: center;
     font-size: 4.5rem;
@@ -1194,7 +1266,7 @@ nav {
       background-color: #e1e1e1; }
   .pricing__info {
     text-align: center;
-    margin: 3rem;
+    padding: 3rem 3rem 9rem;
     font-size: 1.4rem;
     line-height: 1.4em; }
 

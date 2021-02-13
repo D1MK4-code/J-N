@@ -1,5 +1,7 @@
 .pricing {
     padding-top: 12vh;
+    position: relative;
+    min-height: 100vh;
     .heading-primary {
         text-align: center;
         font-size: 4.5rem;
@@ -30,7 +32,7 @@
     }
     &__info {
         text-align: center;
-        margin: 3rem;
+        padding: 3rem 3rem 9rem;
         font-size: 1.4rem;
         line-height: 1.4em;
     }
