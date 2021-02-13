@@ -35,6 +35,7 @@
             border: 3px solid $color-black;
             &:after {
                 content: '';
+                left: 8px;
                 background: $color-black;
             }
         }

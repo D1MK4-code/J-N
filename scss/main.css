@@ -645,6 +645,7 @@ nav {
       border: 3px solid #000; }
       .about-patryk .header-about .mouse:after {
         content: '';
+        left: 8px;
         background: #000; }
   .about-patryk .career-bg {
     background-color: #f7f7f7; }
@@ -863,6 +864,7 @@ nav {
       border: 3px solid #000; }
       .about-wit .header-about .mouse:after {
         content: '';
+        left: 8px;
         background: #000; }
   .about-wit .career-bg {
     background-color: #f7f7f7; }
