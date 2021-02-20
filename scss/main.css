@@ -288,7 +288,7 @@ h6 {
   .contact__form {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 15px; }
+    grid-gap: 1.5rem; }
   .contact__label {
     display: block;
     margin-bottom: 1rem; }
@@ -297,20 +297,20 @@ h6 {
     padding: 1rem;
     border: 1px solid #6b6b6b;
     font-size: 1.6rem; }
+  .contact__input-wrapper {
+    text-align: center; }
   .contact .button {
     cursor: pointer;
     font-size: 2rem;
     padding: 1.5rem 3.5rem;
-    max-width: 250px;
+    max-width: 25rem;
     font-weight: 700;
     font-family: 'Manuale', serif;
     align-self: center;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
     outline: none;
     border: none;
-    box-shadow: none; }
+    letter-spacing: .1rem; }
 
 .contact-info {
   margin-bottom: 7rem; }

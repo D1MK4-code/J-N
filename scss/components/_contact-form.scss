@@ -15,7 +15,7 @@
     &__form {
         display: grid;
         grid-template-columns: 1fr;
-        grid-gap: 15px;
+        grid-gap: 1.5rem;
     }
     &__label {
         display: block;
@@ -28,20 +28,21 @@
         border: 1px solid $color-button-background-hover;
         font-size: 1.6rem;
     }
+    &__input-wrapper {
+        text-align: center;
+    }
     .button {
         cursor: pointer;
         font-size: 2rem;
         padding: 1.5rem 3.5rem;
-        max-width: 250px;
+        max-width: 25rem;
         font-weight: 700;
         font-family: 'Manuale', serif;
         align-self: center;
         position: relative;
-        left: 50%;
-        transform: translateX(-50%);
         outline: none;
         border: none;
-        box-shadow: none;
+        letter-spacing: .1rem;
     }
 }
 
