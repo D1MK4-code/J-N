@@ -4,6 +4,9 @@
     display: flex;
     justify-content: center;
     margin-bottom: 7rem;
+    .heading-secondary {
+        text-align: center;
+    }
     &__wrapper {
         padding: 2rem;
         width: 80rem;

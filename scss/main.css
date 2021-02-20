@@ -279,6 +279,8 @@ h6 {
   display: flex;
   justify-content: center;
   margin-bottom: 7rem; }
+  .contact .heading-secondary {
+    text-align: center; }
   .contact__wrapper {
     padding: 2rem;
     width: 80rem; }
