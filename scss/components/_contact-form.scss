@@ -1,0 +1,45 @@
+.contact {
+    max-width: 160rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7rem;
+    &__wrapper {
+        padding: 2rem;
+        width: 80rem;
+    }
+    &__paragraph {
+        font-size: 1.6rem;
+    }
+    &__form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    }
+    &__label {
+        display: block;
+        margin-bottom: 1rem;
+    }
+    &__input,
+    &__area {
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid $color-button-background-hover;
+        font-size: 1.6rem;
+    }
+    .button {
+        cursor: pointer;
+        font-size: 2rem;
+        padding: 1.5rem 3.5rem;
+        max-width: 250px;
+        font-weight: 700;
+        font-family: 'Manuale', serif;
+        align-self: center;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        outline: none;
+        border: none;
+        box-shadow: none;
+    }
+}

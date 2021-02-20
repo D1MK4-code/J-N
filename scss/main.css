@@ -273,6 +273,44 @@ h6 {
     .card-container .card:hover {
       transform: scale(1.05) translateY(-0.5rem); }
 
+.contact {
+  max-width: 160rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7rem; }
+  .contact__wrapper {
+    padding: 2rem;
+    width: 80rem; }
+  .contact__paragraph {
+    font-size: 1.6rem; }
+  .contact__form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px; }
+  .contact__label {
+    display: block;
+    margin-bottom: 1rem; }
+  .contact__input, .contact__area {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #6b6b6b;
+    font-size: 1.6rem; }
+  .contact .button {
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 1.5rem 3.5rem;
+    max-width: 250px;
+    font-weight: 700;
+    font-family: 'Manuale', serif;
+    align-self: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    outline: none;
+    border: none;
+    box-shadow: none; }
+
 .mouse-wrapper {
   position: absolute;
   left: 50%;
