@@ -10,6 +10,7 @@
     }
     &__paragraph {
         font-size: 1.6rem;
+        font-weight: 500;
     }
     &__form {
         display: grid;
@@ -41,5 +42,45 @@
         outline: none;
         border: none;
         box-shadow: none;
+    }
+}
+
+.contact-info {
+    margin-bottom: 7rem;
+    &__wrapper {
+        text-align: center;
+        .heading-secondary {
+            margin-bottom: 4rem;
+        }
+    }
+    &__place {
+        margin-bottom: 2rem;
+    }
+    &__paragraph {
+        font-size: 1.6rem;
+        font-weight: 500;
+        &--adress {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+    }
+    &__link {
+        font-size: 1.6rem;
+        color: $color-text-primary;
+        text-decoration: none;
+        margin: .5rem 0 1.5rem;
+        display: block;
+        &:hover {
+            color: $color-button-background;
+        }
+    }
+}
+
+@media(max-width:575px) {
+    .contact-info,
+    .contact {
+        .heading-secondary {
+            font-size: 3rem;
+        }
     }
 }

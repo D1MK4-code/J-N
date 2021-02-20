@@ -283,7 +283,8 @@ h6 {
     padding: 2rem;
     width: 80rem; }
   .contact__paragraph {
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    font-weight: 500; }
   .contact__form {
     display: grid;
     grid-template-columns: 1fr;
@@ -311,6 +312,33 @@ h6 {
     border: none;
     box-shadow: none; }
 
+.contact-info {
+  margin-bottom: 7rem; }
+  .contact-info__wrapper {
+    text-align: center; }
+    .contact-info__wrapper .heading-secondary {
+      margin-bottom: 4rem; }
+  .contact-info__place {
+    margin-bottom: 2rem; }
+  .contact-info__paragraph {
+    font-size: 1.6rem;
+    font-weight: 500; }
+    .contact-info__paragraph--adress {
+      margin-bottom: 1rem;
+      font-size: 2rem; }
+  .contact-info__link {
+    font-size: 1.6rem;
+    color: #2f3542;
+    text-decoration: none;
+    margin: .5rem 0 1.5rem;
+    display: block; }
+    .contact-info__link:hover {
+      color: #0097e6; }
+
+@media (max-width: 575px) {
+  .contact-info .heading-secondary,
+  .contact .heading-secondary {
+    font-size: 3rem; } }
 .mouse-wrapper {
   position: absolute;
   left: 50%;
@@ -1213,6 +1241,14 @@ nav {
     font-size: 3rem; }
   .attribute__list-item a {
     font-size: 1.2rem; } }
+.contact-page {
+  padding-top: 12vh;
+  position: relative;
+  min-height: 100vh; }
+  .contact-page .contact-info {
+    padding-bottom: 12rem;
+    margin: 0; }
+
 .gallery {
   min-height: 100vh;
   width: 100%;
