@@ -1,9 +1,15 @@
 .contact-page {
-    padding-top: 12vh;
+    padding-top: 10vh;
     position: relative;
     min-height: 100vh;
     .contact-info {
         padding-bottom: 12rem;
         margin: 0;
+    }
+}
+
+@media(max-width:767px) {
+    .contact-page {
+        padding-top: 8vh;
     }
 }

@@ -1242,13 +1242,16 @@ nav {
   .attribute__list-item a {
     font-size: 1.2rem; } }
 .contact-page {
-  padding-top: 12vh;
+  padding-top: 10vh;
   position: relative;
   min-height: 100vh; }
   .contact-page .contact-info {
     padding-bottom: 12rem;
     margin: 0; }
 
+@media (max-width: 767px) {
+  .contact-page {
+    padding-top: 8vh; } }
 .gallery {
   min-height: 100vh;
   width: 100%;
@@ -1361,7 +1364,7 @@ nav {
       font-size: 1.4rem; }
 
   .section-services {
-    padding: 2rem 1.5rem 8rem; }
+    padding: 2rem 1.5rem 6rem; }
     .section-services .desc-primary {
       font-size: 1.4rem; } }
 @media (max-width: 576px) {
@@ -1375,7 +1378,7 @@ nav {
     margin: 1.5rem; }
 
   .section-services {
-    padding: 0rem 1.5rem 8rem; }
+    padding: 0rem 1.5rem 6rem; }
     .section-services .heading-primary {
       font-size: 2.4rem; }
     .section-services .services {
